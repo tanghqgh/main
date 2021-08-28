@@ -78,6 +78,51 @@
 
 <p>This is my final product in action where it is plugged in with power and hooked onto the flower pot. This shows a tears of joy face which means the plant is well hydrated! :)</p>
 
+<h2>Below shows some part of the code im using to create the animated face</h2>
+
+<p>Libraries</p>
+<xmp>
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <Fonts/FreeSans9pt7b.h>
+
+#define OLED_RESET -1 
+Adafruit_SSD1306 display(OLED_RESET);
+int sensorValue = 0;
+</xmp>
+
+<p>Tears of joy</p>
+<xmp>
+    if(sensorValue >= 80 && sensorValue < 250) {
+
+//smile
+</xmp>
+
+<p>Happy</p>
+<xmp>
+    else if(sensorValue >= 250 && sensorValue < 350) {
+    //blased
+</xmp>
+
+<p>Neutral</p>
+<xmp>
+    else if(sensorValue >= 350 && sensorValue < 550) {
+    //nutral
+</xmp>
+
+<p>Sad</p>
+<xmp>
+    else if(sensorValue >= 550 && sensorValue < 700) {
+    //sad
+</xmp>
+
+<p>Crying</p>
+<xmp>
+    else if(sensorValue >= 700 && sensorValue < 800) {
+    //Crying
+</xmp>
 
 <footer>Copyright &copy; 2021 THQ</footer>
 <style>footer {border: 1px solid black;text-align: center;}</style>
